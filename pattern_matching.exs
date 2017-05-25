@@ -8,3 +8,12 @@ IO.puts place
 IO.puts a
 IO.puts b
 IO.puts c
+
+# Capitales
+
+{colombia, francia, austria, belgica} = {"Bogotá", "París", "Vienna", "Bruselas"}
+
+IO.puts colombia #=> Bogotá
+IO.puts francia #=> París
+IO.puts austria #=> Vienna
+IO.puts belgica #=> Bruselas
