@@ -17,3 +17,6 @@ IO.puts colombia #=> Bogotá
 IO.puts francia #=> París
 IO.puts austria #=> Vienna
 IO.puts belgica #=> Bruselas
+
+"Mauricio " <> last_name = "Mauricio Serna"
+IO.puts last_name
