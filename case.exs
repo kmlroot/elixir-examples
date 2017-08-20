@@ -6,3 +6,16 @@ case {1, 2, 3} do
   _ ->
     IO.puts "This clause would match any value"
 end
+
+# Using case to test values against patterns
+
+defmodule Account do
+  def list_transactions(filename) do
+    case File.read(filename) do
+      {:ok, content} 
+        when byte_size(content) > 10 -> "Content: #{content}"
+      {:ok, content} -> "Content: #{content}"
+      {:error, type} -> "Error: #{type}"
+    end
+  end
+end
