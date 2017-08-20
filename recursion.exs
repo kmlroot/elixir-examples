@@ -13,3 +13,19 @@ defmodule RecursionExample do
 end
 
 RecursionExample.print_list([1,2,3,4,5])
+
+# Another example
+
+IO.puts "------------------ Another example -------------------"
+
+defmodule Language do
+  def print_list([head | tail]) do
+    IO.puts head
+    print_list(tail)
+  end
+
+  def print_list([]) do
+  end
+end
+
+Language.print_list(["Elixir", "Javascript", "Ruby"])
